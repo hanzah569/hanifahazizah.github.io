@@ -1,9 +1,9 @@
 .banner{
-    background-color: #109a5e;
+    background: url("output-onlinepngtools.png");
     background-size: cover;
     padding-top: 30%;
     padding-bottom: 30px;
-    color: #FFFF;
+    font-style: #fff;
 }
 
 :root {
@@ -19,37 +19,6 @@
   --accent-color: #008374; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-:root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #008374; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #01433c; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #008374; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-.light-background {
-  --background-color: #f2f9f9;
-  --surface-color: #ffffff;
-}
-
-.dark-background {
-  --background-color: #060606;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
-}
-
-.accent-background {
-  --background-color: #1bd0bb;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --accent-color: #ffffff;
-  --surface-color: #00b6a1;
-  --contrast-color: #ffffff;
 }
 
 :root {
@@ -178,20 +147,59 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
+.icon-box {
+  background-color: var(--surface-color);
+  text-align: center;
+  padding: 40px 30px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.icon-box i {
+  color: var(--accent-color);
+  font-size: 32px;
+  margin-bottom: 30px;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.icon-box h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 30px 0;
+  font-family: var(--default-font);
+}
+
+.icon-box p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.icon-box:hover i {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
 
 .lingkaran {
     display:inline-block;
+    place-items: start center;
     border-radius: 20%;
-    width: 50px;
-    margin-left: 30%;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     color: #FFF;
-    background-color: #fa7618;
+    background-color: #f5f249;
 }
 
 .lingkaran i{
     position: relative;
-    top: 10px;
+    top: 20px;
 }
 
 .crop-img {
